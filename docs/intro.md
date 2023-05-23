@@ -14,6 +14,5 @@ It will generally take a few iterations for each document to get to a "Completed
 
 ## Roadmap
 
-- [ ] How I created this personal documentation website
 - [ ] My Homelab setup
 - [ ] Learnings from making the game [quik](https://quik.kemara.me)
