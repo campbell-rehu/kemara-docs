@@ -1,6 +1,7 @@
 ---
 title: Intro
 sidebar_position: 1
+slug: /
 ---
 
 This is where I document things that I have learned.
