@@ -2,7 +2,7 @@
 title: Upgrading Ubuntu after end of life support
 ---
 
-# Background
+## Background
 
 I have a number of virtual machines running in my homelab that were created using Ubuntu 23.04 (Lunar).
 There isn't a direct upgrade path from Ubuntu 23.04 to the latest version of Ubuntu so I needed to manually upgrade the OS.

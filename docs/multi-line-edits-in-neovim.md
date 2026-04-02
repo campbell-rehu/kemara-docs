@@ -2,7 +2,7 @@
 title: Multi-line Editing in Neovim
 ---
 
-# Getting the field names from a type when initializing
+## Getting the field names from a type when initializing
 
 Given the following type:
 

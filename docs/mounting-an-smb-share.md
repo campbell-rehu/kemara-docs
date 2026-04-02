@@ -2,7 +2,7 @@
 title: Mounting an SMB share in Ubuntu
 ---
 
-# Background
+## Background
 
 I recently migrated my self hosted instance of [Immich](https://immich.app/) to a new machine but was having difficulties mounting the SMB share which contains all of the existing photo and video backups.
 I had set it up successfully on the initial machine but couldn't remember how to do it again and so was just going off of the command history. I got stuck trying to get the share credentials

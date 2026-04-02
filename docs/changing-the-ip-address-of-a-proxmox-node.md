@@ -2,7 +2,7 @@
 title: Changing the IP Address of a Proxmox Node
 ---
 
-# Background
+## Background
 
 I just finished doing a networking reconfiguration and needed to change the IP addresses of my three Proxmox nodes.
 

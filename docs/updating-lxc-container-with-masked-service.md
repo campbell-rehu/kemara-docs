@@ -2,7 +2,7 @@
 title: Updating an LXC container when a systemctl service is masked
 ---
 
-# Background
+## Background
 
 I have a Proxmox LXC container running [Nginx Proxy Manager](https://nginxproxymanager.com/). I typically keep it up to date using the [Proxmox Helper Scripts](https://community-scripts.github.io/ProxmoxVE/) — running the same script that was used to install the container in the first place from within the container's console.
 

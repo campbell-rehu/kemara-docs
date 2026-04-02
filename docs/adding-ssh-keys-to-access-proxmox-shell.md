@@ -2,7 +2,7 @@
 title: Generating SSH Keys to access a Proxmox node shell
 ---
 
-# Background
+## Background
 
 I have a Proxmox node running in my homelab where I run some LXC containers.
 

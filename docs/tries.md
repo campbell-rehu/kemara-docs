@@ -4,7 +4,7 @@ title: Implementing Tries in Golang
 
 <img alt="AI generated image with the prompt: a trie data structure in pixar animation style" src="/img/a_trie_data_structure_in_pixar_animation_style.png" width="500px"/>
 
-# Background
+## Background
 
 I was recently introduced to this github repo: https://github.com/codecrafters-io/build-your-own-x and decided to give one of the tutorials a go.
 
@@ -14,15 +14,15 @@ I decided to do a brief side-quest into tree data structures and came across the
 
 With this in mind, I decided to try and implement a trie data structure in Golang with the aim being to get simple text autocompletion working in the command line.
 
-# Repo
+## Repo
 
 All of the code for this project can be found [here](https://github.com/campbell-rehu/trie-implementation).
 
-# Writing Golang
+## Writing Golang
 
 I have used Golang in a previous job and so I wanted to refresh my memory of the language and it was quite a joyful reunion. From the simplicity of the syntax, to the ease of running and building it, I thoroughly enjoyed getting involved with it again.
 
-# What are Tries?
+## What are Tries?
 
 Through watching some YouTube videos about the theory behind Tries, I learned that a Trie is made up of a collection of `Node`s with each node having three properties:
 
@@ -55,7 +55,7 @@ The `Trie` type is made up of:
 2. a list of `Words` to which the words that matched the input characters could be stored and retrieved later
    - Note: this was the simplest way I could find to get the complete words out but I'd like to explore an alternate approach in the future perhaps using channels instead.
 
-# Adding a word to the Trie
+## Adding a word to the Trie
 
 To add a complete word to a Trie, I added these functions:
 
@@ -91,7 +91,7 @@ If the letter is already one of the current `Node`'s children, we just set that 
 
 When creating a new child `Node`, we set the `CompleteWord` value to whether the character in the last in the input word.
 
-# Retrieving the list of available words
+## Retrieving the list of available words
 
 To retrieve a list of words for a given input of one character or more, I added this function:
 
@@ -110,7 +110,7 @@ func (t *Trie) GetWord(word string, node *Node) {
 
 The function would continue to traverse that `Node`'s child `Node`s because there could be additional complete words that follow with additional characters e.g. if the Trie contained the words `CAR` and `CARD`, with an input word of `CA`, the words `CAR` and `CARD` would need to be returned because they are both complete words.
 
-# Putting it all together
+## Putting it all together
 
 There were some additional helper functions and it was all wrapped around keyboard event handling but for simplicity, the crux of functionality was in the following lines:
 
@@ -140,7 +140,7 @@ From this node we retrieved the "child-most" `Node` for the given word e.g. give
 
 Finally, we would call the `trie.GetWord` function using that "child-most" `Node` to set `trie.Words` to the correct list of words based on the input.
 
-# Learnings & Conclusion
+## Learnings & Conclusion
 
 Overall, this project has been an enjoyable experience. It was great to get back into Golang and learning about tries was interesting.
 
