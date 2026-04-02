@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'kemara-docs',
+  title: 'mushfoo - docs',
   tagline: 'Hi! My name is Campbell',
 
   // Set the production url of your site here
@@ -53,7 +53,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'kemara-docs',
+        title: 'mushfoo - docs',
         items: [
           {
             href: 'https://github.com/campbell-rehu',
