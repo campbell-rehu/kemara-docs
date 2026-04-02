@@ -10,7 +10,7 @@ When I went to run the update script, it failed partway through. The script need
 
 My first assumption was that the issue was related to the container being unprivileged, so I spent some time converting it to a privileged container — but the error persisted after doing so. The actual fix turned out to be unmasking the `openresty.service` directly.
 
-# 1. (Optional) Convert the container from unprivileged to privileged
+## 1. (Optional) Convert the container from unprivileged to privileged
 
 I tried this first but it didn't resolve the issue, so this step can be skipped. I've included it here for reference.
 
@@ -38,7 +38,7 @@ Then start the container again:
 pct start <CTID>
 ```
 
-# 2. Find the masked service symlink
+## 2. Find the masked service symlink
 
 From within the LXC container's console, search for the service file in the `systemd` directories:
 
@@ -58,7 +58,7 @@ A masked service will show something like:
 lrwxrwxrwx 1 root root 9 ... /path/to/openresty.service -> /dev/null
 ```
 
-# 3. Remove the symlink
+## 3. Remove the symlink
 
 Remove the symlink that is masking the service:
 
@@ -66,7 +66,7 @@ Remove the symlink that is masking the service:
 rm /path/to/openresty.service
 ```
 
-# 4. Reload the systemd daemon
+## 4. Reload the systemd daemon
 
 ```bash
 systemctl daemon-reload
@@ -74,6 +74,6 @@ systemctl daemon-reload
 
 This will pick up the change and unmask the service.
 
-# 5. Re-run the update script
+## 5. Re-run the update script
 
 With the service unmasked, re-run the Proxmox helper update script from within the container's console. The script should now be able to build and restart OpenResty successfully.

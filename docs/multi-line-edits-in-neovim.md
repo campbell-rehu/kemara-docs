@@ -19,7 +19,7 @@ type Person {
 When initializing an instance of that type, getting all of the fields to use can be cumbersome (though much less so thanks to IDE plugins and GH Copilot).
 So using VIM motions, we can grab the fields off the type, add them to the instance declaration and use some find and replace magic to initialize the fields.
 
-# 1. Select and yank the field names from the type definition
+## 1. Select and yank the field names from the type definition
 
 Navigate to the first field inside the type body (e.g., the line with `name: string`).
 
@@ -36,7 +36,7 @@ Yank the selection:
 y
 ```
 
-# 2. Paste the fields into the instance declaration
+## 2. Paste the fields into the instance declaration
 
 Move the cursor to the line inside the initialization block where the fields should appear, then paste:
 
@@ -55,7 +55,7 @@ const person: Person = {
 }
 ```
 
-# 3. Strip the type annotations
+## 3. Strip the type annotations
 
 Re-select the pasted lines:
 
@@ -80,7 +80,7 @@ const person: Person = {
 }
 ```
 
-# 4. Expand each field to a key-value pair
+## 4. Expand each field to a key-value pair
 
 Re-select the fields and run another substitution to expand the shorthand into initialized key-value pairs:
 
