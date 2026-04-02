@@ -4,16 +4,6 @@ sidebar_position: 1
 slug: /
 ---
 
-This is where I document things that I have learned.
+Hi, I'm Campbell - a software engineer and tinkerer.
 
-It will generally take a few iterations for each document to get to a "Completed" state so while a document is listed as WIP (work in progress), I'm likely still planning to make changes to it.
-
-## What I'm intending to write about here
-
-- Learnings from building / making things
-- Book, video and podcast reviews / notes
-
-## Roadmap
-
-- [ ] My Homelab setup
-- [ ] Learnings from making the game [quik](https://quik.kemara.me)
+This is where I document things I've learned along the way. Mostly notes for future me in case I forget how I did something.

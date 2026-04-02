@@ -34,6 +34,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
@@ -57,11 +58,6 @@ const config = {
           {
             href: 'https://github.com/campbell-rehu',
             label: 'GitHub',
-            position: 'right',
-          },
-          {
-            href: 'https://gitlab.com/campbellrehu',
-            label: 'GitLab',
             position: 'right',
           },
         ],
