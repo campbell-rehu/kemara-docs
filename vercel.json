@@ -2,7 +2,9 @@
   "redirects": [
     { "source": "/", "destination": "/docs/", "permanent": false }
   ],
-  "rewrites": [
-    { "source": "/docs/:path*", "destination": "/:path*" }
-  ]
+  "rewrites": {
+    "beforeFiles": [
+      { "source": "/docs/:path*", "destination": "/:path*" }
+    ]
+  }
 }
