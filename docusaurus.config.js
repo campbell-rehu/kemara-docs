@@ -10,10 +10,10 @@ const config = {
   tagline: 'Hi! My name is Campbell',
 
   // Set the production url of your site here
-  url: 'https://rekatek.com',
+  url: 'https://mush.foo',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docs/',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
